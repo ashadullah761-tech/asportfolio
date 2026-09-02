@@ -54,8 +54,12 @@ export default function RootLayout({
       <head>
         <JsonLd />
       </head>
-      <body className="bg-background text-foreground selection:bg-purple-600 selection:text-white font-sans antialiased min-h-screen">
-        {children}
+      <body className="bg-background text-foreground selection:bg-purple-600 selection:text-white font-sans antialiased min-h-screen relative">
+        {/* Centered Golden Glowing Background Grid across all sections */}
+        <div className="fixed inset-0 bg-golden-grid pointer-events-none z-0 opacity-80" />
+        <div className="relative z-10">
+          {children}
+        </div>
         <Toaster position="bottom-right" theme="dark" closeButton />
       </body>
     </html>

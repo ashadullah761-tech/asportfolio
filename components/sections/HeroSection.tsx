@@ -43,8 +43,8 @@ export default function HeroSection() {
       <div className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-indigo-600/15 rounded-full blur-[130px] pointer-events-none" />
       <div className="absolute top-1/3 left-10 w-[350px] h-[350px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
 
-      {/* Grid Pattern Overlay */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
+      {/* Grid Pattern Overlay - Centered Golden Glowing Lines */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-90 pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center relative z-10">
         {/* Availability Pill */}
