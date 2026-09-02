@@ -49,9 +49,9 @@ export default function HeroSection() {
       <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center relative z-10">
         {/* Availability Pill */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.2 }}
           className="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass-card border border-purple-500/30 text-xs font-semibold text-purple-300 mb-8 shadow-inner shadow-purple-500/10"
         >
           <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
@@ -60,9 +60,9 @@ export default function HeroSection() {
 
         {/* Main Heading */}
         <motion.h1
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.05 }}
+          transition={{ duration: 0.2 }}
           className="text-4xl sm:text-6xl md:text-7xl font-extrabold font-heading tracking-tight text-white leading-[1.1] mb-6"
         >
           Hi, I&apos;m <span className="text-gradient">Ashadullah</span>
@@ -78,9 +78,9 @@ export default function HeroSection() {
 
         {/* Tagline */}
         <motion.p
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{ duration: 0.2 }}
           className="max-w-2xl mx-auto text-base sm:text-lg text-slate-300 leading-relaxed mb-10"
         >
           Crafting high-impact web applications with precision engineering, modern interactive architectures, and scalable full-stack performance.
@@ -88,9 +88,9 @@ export default function HeroSection() {
 
         {/* CTA Buttons */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.15 }}
+          transition={{ duration: 0.2 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14"
         >
           <a
@@ -113,7 +113,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.2 }}
           className="flex items-center justify-center space-x-5 text-slate-400"
         >
           {[
