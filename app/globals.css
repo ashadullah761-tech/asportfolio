@@ -194,25 +194,33 @@ html.light .text-purple-gradient {
   -webkit-text-fill-color: transparent;
 }
 
-/* Golden Glowing Background Grid - Centered with Golden Glow */
+/* Golden Glowing Background Grid - Ultra-Premium Luminous Glow */
 .bg-grid-pattern,
 .bg-golden-grid {
-  background-size: 48px 48px;
+  background-size: 44px 44px;
   background-image: 
-    linear-gradient(to right, rgba(223, 186, 115, 0.22) 1.2px, transparent 1.2px),
-    linear-gradient(to bottom, rgba(223, 186, 115, 0.22) 1.2px, transparent 1.2px);
-  mask-image: radial-gradient(ellipse 65% 75% at 50% 50%, rgba(0, 0, 0, 0.95) 15%, rgba(0, 0, 0, 0.5) 55%, transparent 85%);
-  -webkit-mask-image: radial-gradient(ellipse 65% 75% at 50% 50%, rgba(0, 0, 0, 0.95) 15%, rgba(0, 0, 0, 0.5) 55%, transparent 85%);
-  filter: drop-shadow(0 0 6px rgba(223, 186, 115, 0.45));
+    linear-gradient(to right, rgba(234, 179, 8, 0.35) 1.5px, transparent 1.5px),
+    linear-gradient(to bottom, rgba(234, 179, 8, 0.35) 1.5px, transparent 1.5px);
+  mask-image: radial-gradient(ellipse 85% 90% at 50% 45%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0.75) 65%, transparent 95%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 90% at 50% 45%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0.75) 65%, transparent 95%);
+  filter: drop-shadow(0 0 6px rgba(234, 179, 8, 0.8)) drop-shadow(0 0 18px rgba(234, 179, 8, 0.45));
+}
+
+.glowing-orbs-layer {
+  background: 
+    radial-gradient(circle 650px at 50% 15%, rgba(234, 179, 8, 0.15), transparent 70%),
+    radial-gradient(circle 550px at 85% 45%, rgba(16, 185, 129, 0.14), transparent 70%),
+    radial-gradient(circle 600px at 15% 75%, rgba(217, 119, 6, 0.14), transparent 70%);
 }
 
 html.light .bg-grid-pattern,
 html.light .bg-golden-grid {
   background-image: 
-    linear-gradient(to right, rgba(163, 126, 58, 0.2) 1.2px, transparent 1.2px),
-    linear-gradient(to bottom, rgba(163, 126, 58, 0.2) 1.2px, transparent 1.2px);
-  mask-image: radial-gradient(ellipse 65% 75% at 50% 50%, rgba(0, 0, 0, 0.9) 15%, rgba(0, 0, 0, 0.4) 55%, transparent 85%);
-  -webkit-mask-image: radial-gradient(ellipse 65% 75% at 50% 50%, rgba(0, 0, 0, 0.9) 15%, rgba(0, 0, 0, 0.4) 55%, transparent 85%);
+    linear-gradient(to right, rgba(180, 130, 40, 0.3) 1.5px, transparent 1.5px),
+    linear-gradient(to bottom, rgba(180, 130, 40, 0.3) 1.5px, transparent 1.5px);
+  mask-image: radial-gradient(ellipse 85% 90% at 50% 45%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0.6) 65%, transparent 95%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 90% at 50% 45%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0.6) 65%, transparent 95%);
+  filter: drop-shadow(0 0 4px rgba(180, 130, 40, 0.4));
 }
 
 /* Permanently hide Netlify Drawer & Collaborative Toolbar */

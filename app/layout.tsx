@@ -66,8 +66,9 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icon.svg" />
       </head>
       <body className="bg-background text-foreground selection:bg-purple-600 selection:text-white font-sans antialiased min-h-screen relative">
-        {/* Centered Golden Glowing Background Grid across all sections */}
-        <div className="fixed inset-0 bg-golden-grid pointer-events-none z-0 opacity-80" />
+        {/* Ambient Glowing Orbs + Centered Golden Glowing Background Grid */}
+        <div className="fixed inset-0 glowing-orbs-layer pointer-events-none z-0" />
+        <div className="fixed inset-0 bg-golden-grid pointer-events-none z-0 opacity-95" />
         <div className="relative z-10">
           {children}
         </div>
