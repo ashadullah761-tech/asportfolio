@@ -50,8 +50,8 @@ export default function ContactSection() {
         throw new Error(result.error || 'Failed to send message');
       }
 
-      toast.success('Message sent successfully!', {
-        description: `Thank you ${data.name}, your message has been received. I will reply to you soon at ${data.email}.`,
+      toast.success('Message Sent Successfully! 📬', {
+        description: `Thank you ${data.name}! Your message has been sent to ashadullah761@gmail.com. Ashadullah will reply to ${data.email} shortly.`,
       });
       reset();
     } catch (err: any) {
