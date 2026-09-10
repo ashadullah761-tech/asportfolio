@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { motion } from 'framer-motion';
 import { toast } from 'sonner';
-import { Mail, Send, MapPin, Clock, MessageSquare, Loader2 } from 'lucide-react';
+import { Mail, Send, MapPin, Clock, MessageSquare, Loader2, Phone } from 'lucide-react';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -119,6 +119,22 @@ export default function ContactSection() {
               </div>
             </a>
 
+            <a
+              href="tel:+919351625306"
+              className="glass-card p-6 rounded-2xl border border-purple-500/20 flex items-start space-x-4 hover:border-purple-500/40 transition-all group block"
+            >
+              <div className="p-3.5 rounded-xl bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500/20 transition-colors">
+                <Phone className="w-6 h-6" />
+              </div>
+              <div>
+                <h4 className="text-base font-bold font-heading text-white">Phone &amp; WhatsApp</h4>
+                <p className="text-sm text-slate-400 mt-0.5 group-hover:text-emerald-300 transition-colors font-mono">+91 9351625306</p>
+                <span className="text-xs text-emerald-400 group-hover:underline mt-2 inline-flex items-center font-medium">
+                  Call or WhatsApp &rarr;
+                </span>
+              </div>
+            </a>
+
             <div className="glass-card p-6 rounded-2xl border border-purple-500/20 flex items-start space-x-4">
               <div className="p-3.5 rounded-xl bg-purple-500/10 text-purple-400">
                 <MapPin className="w-6 h-6" />
@@ -216,6 +232,28 @@ export default function ContactSection() {
                   </>
                 )}
               </button>
+
+              {/* Mobile Phone & WhatsApp Contact Badge */}
+              <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-400 border-t border-purple-500/10">
+                <span className="text-xs text-slate-400">Prefer direct call or WhatsApp?</span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="tel:+919351625306"
+                    className="inline-flex items-center space-x-2 text-xs font-mono font-bold text-emerald-400 hover:text-emerald-300 px-3.5 py-2 rounded-xl bg-emerald-500/10 border border-emerald-500/25 hover:border-emerald-500/50 transition-all shadow-sm"
+                  >
+                    <Phone className="w-3.5 h-3.5" />
+                    <span>+91 9351625306</span>
+                  </a>
+                  <a
+                    href="https://wa.me/919351625306"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-1.5 text-xs font-semibold text-white px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 transition-all shadow-sm shadow-emerald-600/20"
+                  >
+                    <span>WhatsApp</span>
+                  </a>
+                </div>
+              </div>
             </form>
           </motion.div>
         </div>

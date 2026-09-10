@@ -42,6 +42,14 @@ export const metadata: Metadata = {
     creator: '@ashadullah',
     images: ['https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200'],
   },
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
 };
 
 export default function RootLayout({
@@ -53,6 +61,9 @@ export default function RootLayout({
     <html lang="en" className="dark scroll-smooth">
       <head>
         <JsonLd />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/icon.svg" />
       </head>
       <body className="bg-background text-foreground selection:bg-purple-600 selection:text-white font-sans antialiased min-h-screen relative">
         {/* Centered Golden Glowing Background Grid across all sections */}
